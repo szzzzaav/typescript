@@ -20,12 +20,12 @@ let arr5: [number, {}, string] = [1, {}, "123"];
 function a(...args: any[]) {
   let a: IArguments = arguments;
   // arguments不是数组
-  let b: A = arguments;
+  // let b: A = arguments;
 }
 
 // IArguments原理
-interface A {
-  callee: Function;
-  length: number;
-  [index: number]: any;
-}
+// interface A {
+//   callee: Function;
+//   length: number;
+//   [index: number]: any;
+// }
