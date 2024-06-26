@@ -1,3 +1,4 @@
+"use strict";
 var Color;
 (function (Color) {
     Color[Color["green"] = 0] = "green";
@@ -10,21 +11,20 @@ var Colors;
     Colors[Colors["orange"] = 2] = "orange";
     Colors[Colors["red"] = 2] = "red";
 })(Colors || (Colors = {}));
-var B = /** @class */ (function () {
-    function B() {
+class B {
+    constructor() {
         this.color = 0;
     }
-    return B;
-}());
-var obj = {
+}
+let obj = {
     color: Color.green,
     // 也可以是color: 0,
 };
 // 反向读取
 var types;
 (function (types) {
-    types[types["success"] = 0] = "success";
+    types["success"] = "123";
 })(types || (types = {}));
-var ss = types.success;
-var key = types[ss];
-console.log(typeof key); //string
+// let ss: string = types.success;
+// let key = types[ss]; //string 不可以用于反射
+// console.log(typeof key); //string
